@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/',  [\App\Http\Controllers\FrontEndController::class,'index'] )->name('index');
+Route::get('/pt',  [\App\Http\Controllers\FrontEndController::class,'template'] )->name('pt');
+Route::get('/ft',  [\App\Http\Controllers\FrontEndController::class,'new_Index'] )->name('ft');
 Route::get('/listings', [\App\Http\Controllers\FrontEndController::class,'listings'] )->name('listings');
 
 Route::get('/listing/{id}', [\App\Http\Controllers\FrontEndController::class, 'listing'])->name('single.listing');
@@ -27,6 +29,9 @@ Route::post('/contact', [\App\Http\Controllers\ContactController::class, 'store'
 Route::middleware(['isauthorize:1'])->prefix('back')->group(function () {
     Route::get('/', [\App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');
     Route::resource('listings', \App\Http\Controllers\ListingController::class);
+    Route::post('listings/upload',[ \App\Http\Controllers\ListingController::class,'upload'])->name('listingupload');
+    Route::post('listings/getupload',[ \App\Http\Controllers\ListingController::class,'getUpload'])->name('get_upload');
+    Route::post('listings/record',[ \App\Http\Controllers\ListingController::class,'new_store'])->name('listingrecord');
     Route::resource('realtors', \App\Http\Controllers\RealtorController::class);
     Route::resource('users', \App\Http\Controllers\UserController::class);
     Route::resource('som', \App\Http\Controllers\SellerOftheMonth::class);

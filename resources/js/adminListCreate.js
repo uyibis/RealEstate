@@ -6,10 +6,6 @@
 
 import './bootstrap';
 import { createApp } from 'vue';
-//import VueToastr2 from 'vue-toastr-2'
-//import 'vue-toastr-2/dist/vue-toastr-2.min.css'
-//window.toastr = require('toastr')
-//createApp.use(VueToastr2)
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -18,24 +14,25 @@ import { createApp } from 'vue';
  */
 
 const app = createApp({
-
+    methods:{
+        applySelected(items_selected){
+            console.log(items_selected);
+        }
+    }
 });
 
 import ExampleComponent from './components/ExampleComponent.vue';
 //import Loader from "./components/opencomponent/loader/Loader.vue";
 import Progress from "./components/opencomponent/progress/Progress.vue";
-import listingForm from "./components/appcomponent/listing_form/listingForm.vue";
 //import FileUploader from "./components/opencomponent/file_upload/FileUploader.vue";
-//import Gallery from "./components/opencomponent/gallery_dialog/Gallery.vue";
+import Gallery from "./components/opencomponent/gallery_dialog/Gallery.vue";
 
 
-//app.component('example-component', ExampleComponent);
+app.component('example-component', ExampleComponent);
 //app.component('loader', Loader);
 //app.component('progress',Progress);
 //app.component('fileuploader',FileUploader);
-//app.component('gallery',Gallery);
-app.component('listing_form',listingForm);
-
+app.component('gallery',Gallery);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

@@ -1,12 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\{
-    Listing,
-    Realtor,
-    Contact,
-    Som,
-};
+use App\{Listing, Models\ListingNew, Realtor, Contact, Som};
 
 use Illuminate\Support\Facades\Auth;
 
@@ -19,14 +14,17 @@ class FrontEndController extends Controller
     }
     public function template()
     {
-        $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
-        return view('site.template.index', compact('latest_listings'));
+     $listings= ListingNew::all();
+       // $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
+        return view('site.template.index', compact('listings'));
     }
     public function new_Index()
     {
-        $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
-        return view('front.home.index', compact('latest_listings'));
+        $listings= ListingNew::all();
+        // $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
+        return view('site.template.index', compact('listings'));
     }
+
     public function listings()
     {
         $listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->get();
