@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 
-Route::get('/',  [\App\Http\Controllers\FrontEndController::class,'index'] )->name('index');
-Route::get('/pt',  [\App\Http\Controllers\FrontEndController::class,'template'] )->name('pt');
-Route::get('/ft',  [\App\Http\Controllers\FrontEndController::class,'new_Index'] )->name('ft');
+//Route::get('/',  [\App\Http\Controllers\FrontEndController::class,'index'] )->name('index');
+//Route::get('/pt',  [\App\Http\Controllers\FrontEndController::class,'template'] )->name('pt');
+Route::get('/',  [\App\Http\Controllers\FrontEndController::class,'new_Index'] )->name('ft');
 Route::get('/listings', [\App\Http\Controllers\FrontEndController::class,'listings'] )->name('listings');
 
 Route::get('/listing/{id}', [\App\Http\Controllers\FrontEndController::class, 'listing'])->name('single.listing');

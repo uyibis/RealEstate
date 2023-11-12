@@ -14,15 +14,16 @@ class FrontEndController extends Controller
     }
     public function template()
     {
-     $listings= ListingNew::all();
+        $listings= ListingNew::all();
        // $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
         return view('site.template.index', compact('listings'));
     }
+
     public function new_Index()
     {
         $listings= ListingNew::all();
         // $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
-        return view('site.template.index', compact('listings'));
+        return view('front.home.index', compact('listings'));
     }
 
     public function listings()

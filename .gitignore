@@ -18,3 +18,5 @@ yarn-error.log
 /.idea
 /.vscode
 /resources/js/components/opencomponent
+/public/images
+*.zip

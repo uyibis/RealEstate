@@ -24,6 +24,8 @@ class CreateListingsTable extends Migration
             $table->integer('bedroom');
             $table->integer('garage');
             $table->integer('bathroom');
+            $table->string('area');
+            $table->string('town');
             $table->string('city');
             $table->string('country');
             $table->string('thumbnail_0');

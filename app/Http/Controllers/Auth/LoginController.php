@@ -34,7 +34,7 @@ class LoginController extends Controller
             return route('admin.index');
         }
         if(Auth::user()->role == 1){
-            return route('back.realtors');
+            return route('admin.index');
         }
         else{
             return '/';

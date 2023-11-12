@@ -76,52 +76,114 @@ class ListingController extends Controller
             return redirect()->back()->with('error', 'Something went wrong!');
         }
     }
+//{"type":"land","title":"Blufx Restructure Refund","price":2432,"plot_size":"1002 / 08402","area":"Benin City, NG","city":"Benin City, NG","country":"Nigeria","description":"jdflajfla","realtor_id":1,"is_published":"1","images":[{"url":"http://127.0.0.1:8000/images/listing/1697361875_transfer.png","uploading":false,"selected":true,"type":"image/png","id":1}]}
+//{"type":"building","title":"Blufx Restructure Refund","price":213213,"garage":"yes","country":"aslkdfjalds","description":"lkdfajlfj","realtor_id":1,"is_published":"1","images":[{"url":"http://127.0.0.1:8000/images/listing/1697361875_transfer.png","uploading":false,"selected":true,"type":"image/png","id":1}]}
+//{"type":"apartment","title":"Blufx Restructure Refund","price":35345,"bathroom":3,"kitchen":"inside","city":"Benin","country":"Nigeria","area":"Benin","description":"lksjfladjl","realtor_id":1,"is_published":"1","images":[{"url":"http://127.0.0.1:8000/images/listing/1697361875_transfer.png","uploading":false,"selected":true,"type":"image/png","id":1}]}
+
     public function new_store(Request $request)
     {
 
-        $request->validate([
-            'title' => 'required',
-            'description' => 'required',
-            'price' => 'required',
-            'square_feet' => 'required',
-            'lot_size' => 'required',
-            'lot_size' => 'required',
-            'garage' => 'required',
-            'bedroom' => 'required',
-            'bathroom' => 'required',
-            'city' => 'required',
-            'country' => 'required',
-            'realtor_id' => 'required',
-            'is_published' => 'required',
-//            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
-        ]);
+        $data = $request->json()->all();
+        $type = $data['type'];
 
-        $listing = new ListingNew([
-            'title' => $request->get('title'),
-            'description' => $request->get('description'),
-            'price' => $request->get('price'),
-            'square_feet' => $request->get('square_feet'),
-            'lot_size' => $request->get('lot_size'),
-            'bedroom' => $request->get('bedroom'),
-            'bathroom' => $request->get('bathroom'),
-            'garage' => $request->get('garage'),
-            'city' => $request->get('city'),
-            'country' => $request->get('country'),
-            'realtor_id' => $request->get('realtor_id'),
-            'is_published' => $request->get('is_published'),
-            'media'=>json_encode($request->get('images'))
-        ]);
+        switch ($type) {
+            case 'land':
+                $this->saveLandListing($data);
+                break;
+            case 'building':
+                $this->saveBuildingListing($data);
+                break;
+            case 'apartment':
+                $this->saveApartmentListing($data);
+                break;
+            default:
+                return response()->json(['message' => 'Invalid listing type'], 400);
+        }
 
-       // echo json_encode($listing); die();
-        //call custom file upload function
-      //  $isSuccess = $this->massimageUploadHandler($request, $listing);
+        return response()->json(['message' => 'Listing saved successfully']);
 
-        if ($listing) {
+    }
 
-            $listing->save();
-            return response()->json(['status'=>1,'message'=>'Listing added'],200);
-        } else {
-            return response()->json(['status'=>0,'message'=> 'Something went wrong!'],400);
+    private function saveLandListing($data) {
+        // Create a new LandListing model instance
+        $landListing = new LandListing();
+
+        // Set the properties of the LandListing model based on the JSON data
+        $landListing->title = $data['title'];
+        $landListing->price = $data['price'];
+        $landListing->plot_size = $data['plot_size'];
+        $landListing->area = $data['area'];
+        $landListing->city = $data['city'];
+        $landListing->country = $data['country'];
+        $landListing->description = $data['description'];
+        $landListing->realtor_id = $data['realtor_id'];
+        $landListing->is_published = $data['is_published'];
+
+        // Save the LandListing model to the database
+        $landListing->save();
+
+        // Handle the images
+        foreach ($data['images'] as $imageData) {
+            $image = new ListingImage();
+            $image->url = $imageData['url'];
+            $image->type = $imageData['type'];
+            // Attach the image to the land listing
+            $landListing->images()->save($image);
+        }
+    }
+
+    private function saveBuildingListing($data) {
+        // Create a new BuildingListing model instance
+        $buildingListing = new BuildingListing();
+
+        // Set the properties of the BuildingListing model based on the JSON data
+        $buildingListing->title = $data['title'];
+        $buildingListing->price = $data['price'];
+        $buildingListing->garage = $data['garage'];
+        $buildingListing->country = $data['country'];
+        $buildingListing->description = $data['description'];
+        $buildingListing->realtor_id = $data['realtor_id'];
+        $buildingListing->is_published = $data['is_published'];
+
+        // Save the BuildingListing model to the database
+        $buildingListing->save();
+
+        // Handle the images
+        foreach ($data['images'] as $imageData) {
+            $image = new ListingImage();
+            $image->url = $imageData['url'];
+            $image->type = $imageData['type'];
+            // Attach the image to the building listing
+            $buildingListing->images()->save($image);
+        }
+    }
+
+    private function saveApartmentListing($data) {
+        // Create a new ApartmentListing model instance
+        $apartmentListing = new ApartmentListing();
+
+        // Set the properties of the ApartmentListing model based on the JSON data
+        $apartmentListing->title = $data['title'];
+        $apartmentListing->price = $data['price'];
+        $apartmentListing->bathroom = $data['bathroom'];
+        $apartmentListing->kitchen = $data['kitchen'];
+        $apartmentListing->city = $data['city'];
+        $apartmentListing->country = $data['country'];
+        $apartmentListing->area = $data['area'];
+        $apartmentListing->description = $data['description'];
+        $apartmentListing->realtor_id = $data['realtor_id'];
+        $apartmentListing->is_published = $data['is_published'];
+
+        // Save the ApartmentListing model to the database
+        $apartmentListing->save();
+
+        // Handle the images
+        foreach ($data['images'] as $imageData) {
+            $image = new ListingImage();
+            $image->url = $imageData['url'];
+            $image->type = $imageData['type'];
+            // Attach the image to the apartment listing
+            $apartmentListing->images()->save($image);
         }
     }
 
@@ -262,6 +324,19 @@ class ListingController extends Controller
         }
 
         return false;
+    }
+
+    public function deleteUpload($id) {
+        // Find the record by its ID
+        $upload = UserUpload::find($id);
+
+        if ($upload) {
+            // Delete the record if found
+            $upload->delete();
+            return ['status'=>1, 'message'=>'done'];
+        } else {
+            return ['status'=>0, 'message'=>'Failed'];
+        }
     }
 
     public function getUpload(Request $request)
