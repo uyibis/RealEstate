@@ -20,3 +20,5 @@ yarn-error.log
 /resources/js/components/opencomponent
 /public/images
 *.zip
+copy.env
+*.env

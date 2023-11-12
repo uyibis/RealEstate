@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('listing_images', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('listing_id'); // Add foreign key if necessary
+            $table->foreignId('user_upload_id');
             $table->timestamps();
         });
     }

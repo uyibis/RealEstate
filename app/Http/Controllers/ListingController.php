@@ -100,6 +100,7 @@ class ListingController extends Controller
                 return response()->json(['message' => 'Invalid listing type'], 400);
         }
 
+
         return response()->json(['message' => 'Listing saved successfully']);
 
     }
@@ -125,17 +126,16 @@ class ListingController extends Controller
         // Handle the images
         foreach ($data['images'] as $imageData) {
             $image = new ListingImage();
-            $image->url = $imageData['url'];
-            $image->type = $imageData['type'];
-            // Attach the image to the land listing
+            $image->listing_id = $landListing->id;
+            $image->user_upload_id = $imageData['id'];
             $landListing->images()->save($image);
         }
+        return $landListing;
     }
 
     private function saveBuildingListing($data) {
         // Create a new BuildingListing model instance
         $buildingListing = new BuildingListing();
-
         // Set the properties of the BuildingListing model based on the JSON data
         $buildingListing->title = $data['title'];
         $buildingListing->price = $data['price'];
@@ -144,18 +144,16 @@ class ListingController extends Controller
         $buildingListing->description = $data['description'];
         $buildingListing->realtor_id = $data['realtor_id'];
         $buildingListing->is_published = $data['is_published'];
-
         // Save the BuildingListing model to the database
         $buildingListing->save();
-
         // Handle the images
         foreach ($data['images'] as $imageData) {
             $image = new ListingImage();
-            $image->url = $imageData['url'];
-            $image->type = $imageData['type'];
-            // Attach the image to the building listing
-            $buildingListing->images()->save($image);
+            $image->listing_id = $buildingListing->id;
+            $image->user_upload_id = $imageData['id'];
+            $image->save();
         }
+        return $buildingListing;
     }
 
     private function saveApartmentListing($data) {
@@ -180,11 +178,11 @@ class ListingController extends Controller
         // Handle the images
         foreach ($data['images'] as $imageData) {
             $image = new ListingImage();
-            $image->url = $imageData['url'];
-            $image->type = $imageData['type'];
-            // Attach the image to the apartment listing
-            $apartmentListing->images()->save($image);
+            $image->listing_id = $apartmentListing->id;
+            $image->user_upload_id = $imageData['id'];
+            $image->save();
         }
+        return $apartmentListing;
     }
 
 
