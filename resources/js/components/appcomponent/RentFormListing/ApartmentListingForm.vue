@@ -20,10 +20,10 @@
 <!--            <label>Bedroom :</label>-->
 <!--            <input type="number" name="bedroom" class="form-control"  v-model="old.bedroom" placeholder="Bedroom">-->
 <!--        </div>-->
-        <div class="form-group">
-            <label>Bathroom :</label>
-            <input type="number" name="bathroom" class="form-control"  v-model="old.bathroom" placeholder="Bathroom">
-        </div>
+<!--        <div class="form-group">-->
+<!--            <label>Bathroom :</label>-->
+<!--            <input type="number" name="bathroom" class="form-control"  v-model="old.bathroom" placeholder="Bathroom">-->
+<!--        </div>-->
 
         <div class="form-group">
             <label>Kitchen :</label>

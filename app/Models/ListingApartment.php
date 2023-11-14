@@ -25,6 +25,10 @@ class ListingApartment extends Model
 
     public function realtor(){
 
-        return $this->belongsTo(Realtor::class);
+        return $this->belongsTo(Realtor::class,'realtor_id');
+    }
+
+    public function images(){
+        return $this->hasMany(ListingImage::class,'listing_id','id');
     }
 }

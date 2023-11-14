@@ -16,11 +16,12 @@ return new class extends Migration
             $table->string('title');
             $table->text('description');
             $table->decimal('price', 10, 2);
+            $table->string('garage');
             $table->string('plot_size');
             $table->string('area');
             $table->string('city');
             $table->string('country');
-            $table->text('media');
+            $table->text('media')->nullable();
 
             $table->foreignId('realtor_id')->nullable()
                 ->constrained()

@@ -4,7 +4,17 @@ namespace App\Http\Controllers;
 
 use http\Env\Response;
 use Illuminate\Http\Request;
-use App\{Listing, Models\ListingNew, Models\UserUpload, Realtor};
+use Illuminate\Support\Facades\Auth;
+use App\{Enum\PropertyType,
+    Listing,
+    Models\ListingApartment,
+    Models\ListingBuilding,
+    Models\ListingImage,
+    Models\ListingLand,
+    Models\ListingNew,
+    Models\PropertyEntry,
+    Models\UserUpload,
+    Realtor};
 
 
 class ListingController extends Controller
@@ -82,32 +92,44 @@ class ListingController extends Controller
 
     public function new_store(Request $request)
     {
-
+        $id= Auth::id();
         $data = $request->json()->all();
         $type = $data['type'];
-
+        $entry = new PropertyEntry;
         switch ($type) {
             case 'land':
-                $this->saveLandListing($data);
+               $landlisting=  $this->saveLandListing($data);
+
+               $entry->user_id=$id;
+               $entry->property_id=$landlisting->id;
+               $entry->property_type=PropertyType::LAND;
+
                 break;
             case 'building':
-                $this->saveBuildingListing($data);
+               $buildinglisting= $this->saveBuildingListing($data);
+                $entry->user_id=$id;
+                $entry->property_id=$buildinglisting->id;
+                $entry->property_type=PropertyType::BUILDING;
                 break;
             case 'apartment':
-                $this->saveApartmentListing($data);
+              $apartmentlisting=  $this->saveApartmentListing($data);
+                $entry->user_id=$id;
+                $entry->property_id=$apartmentlisting->id;
+                $entry->property_type=PropertyType::APARTMENT;
                 break;
             default:
                 return response()->json(['message' => 'Invalid listing type'], 400);
         }
-
-
-        return response()->json(['message' => 'Listing saved successfully']);
-
+        if ($entry->save()) {
+            return response()->json(['message' => 'Listing saved successfully'], 200);
+        } else {
+            return response()->json(['message' => 'Listing failed'], 500);
+        }
     }
 
     private function saveLandListing($data) {
         // Create a new LandListing model instance
-        $landListing = new LandListing();
+        $landListing = new ListingLand;
 
         // Set the properties of the LandListing model based on the JSON data
         $landListing->title = $data['title'];
@@ -125,22 +147,25 @@ class ListingController extends Controller
 
         // Handle the images
         foreach ($data['images'] as $imageData) {
-            $image = new ListingImage();
+            $image = new ListingImage;
             $image->listing_id = $landListing->id;
             $image->user_upload_id = $imageData['id'];
-            $landListing->images()->save($image);
+            $image->save();
         }
         return $landListing;
     }
 
     private function saveBuildingListing($data) {
         // Create a new BuildingListing model instance
-        $buildingListing = new BuildingListing();
+        $buildingListing = new ListingBuilding;
         // Set the properties of the BuildingListing model based on the JSON data
         $buildingListing->title = $data['title'];
         $buildingListing->price = $data['price'];
         $buildingListing->garage = $data['garage'];
+        $buildingListing->area = $data['area'];
+        $buildingListing->city = $data['city'];
         $buildingListing->country = $data['country'];
+        $buildingListing->plot_size = $data['plot_size'];
         $buildingListing->description = $data['description'];
         $buildingListing->realtor_id = $data['realtor_id'];
         $buildingListing->is_published = $data['is_published'];
@@ -158,12 +183,12 @@ class ListingController extends Controller
 
     private function saveApartmentListing($data) {
         // Create a new ApartmentListing model instance
-        $apartmentListing = new ApartmentListing();
+        $apartmentListing = new ListingApartment;
 
         // Set the properties of the ApartmentListing model based on the JSON data
         $apartmentListing->title = $data['title'];
         $apartmentListing->price = $data['price'];
-        $apartmentListing->bathroom = $data['bathroom'];
+//        $apartmentListing->bathroom = $data['bathroom'];
         $apartmentListing->kitchen = $data['kitchen'];
         $apartmentListing->city = $data['city'];
         $apartmentListing->country = $data['country'];

@@ -12,25 +12,22 @@ class PropertyEntry extends Model
     protected $fillable = [
         'property_id',
         'property_type',
-
+        'is_published',
     ];
 
     public function land_listing()
     {
-        return $this->belongsTo(Listing::class, 'property_id', 'id')
-            ->where('property_type', 'land');
+        return $this->belongsTo(ListingLand::class, 'property_id', 'id');
     }
 
     public function building_listing()
     {
-        return $this->belongsTo(Building::class, 'property_id', 'id')
-            ->where('property_type', 'building');
+        return $this->belongsTo(ListingBuilding::class, 'property_id', 'id');
     }
 
     public function apartment_listing()
     {
-        return $this->belongsTo(Apartment::class, 'property_id', 'id')
-            ->where('property_type', 'apartment');
+        return $this->belongsTo(ListingApartment::class, 'property_id', 'id');
     }
 
     public function user()

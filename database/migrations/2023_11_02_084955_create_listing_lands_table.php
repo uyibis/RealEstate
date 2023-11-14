@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('area');
             $table->string('city');
             $table->string('country');
-            $table->text('media');
+            $table->text('media')->nullable();
 
             $table->foreignId('realtor_id')->nullable()
                 ->constrained()

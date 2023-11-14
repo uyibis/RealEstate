@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\{Listing, Models\ListingNew, Realtor, Contact, Som};
+use App\{Enum\PropertyType, Listing, Models\ListingNew, Models\PropertyEntry, Realtor, Contact, Som};
 
 use Illuminate\Support\Facades\Auth;
 
@@ -10,7 +10,7 @@ class FrontEndController extends Controller
     public function index()
     {
         $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
-        return view('site.layouts.index', compact('latest_listings'));
+         return view('site.layouts.index', compact('latest_listings'));
     }
     public function template()
     {
@@ -21,9 +21,16 @@ class FrontEndController extends Controller
 
     public function new_Index()
     {
-        $listings= ListingNew::all();
+        //$listings= ListingNew::all();
+        $latest_listings=PropertyEntry::orderBy('id','DESC')->where('property_type',PropertyType::LAND)->where('is_published','1')
+            ->limit('3')->with('land_listing.images.user_upload')->with('land_listing.realtor')->get();
+        $apartment_listings=PropertyEntry::orderBy('id','DESC')->where('property_type',PropertyType::APARTMENT)->where('is_published','1')
+            ->limit('3')->with('apartment_listing.images.user_upload')->with('apartment_listing.realtor')->get();
+        $building_listings=PropertyEntry::orderBy('id','DESC')->where('property_type',PropertyType::BUILDING)->where('is_published','1')
+            ->limit('3')->with('building_listing.images.user_upload')->with('building_listing.realtor')->get();
+        //die (json_encode($building_listings));
         // $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
-        return view('front.home.index', compact('listings'));
+        return view('front.home.index', compact('latest_listings','apartment_listings','building_listings'));
     }
 
     public function listings()

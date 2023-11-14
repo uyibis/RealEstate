@@ -16,6 +16,7 @@ class ListingBuilding extends Model
         'price',
         'plot_size',
         'media',
+        'garage',
         'area',
         'city',
         'country',
@@ -26,6 +27,10 @@ class ListingBuilding extends Model
 
     public function realtor(){
 
-        return $this->belongsTo(Realtor::class);
+        return $this->belongsTo(Realtor::class,'realtor_id');
+    }
+
+    public function images(){
+        return $this->hasMany(ListingImage::class,'listing_id','id');
     }
 }

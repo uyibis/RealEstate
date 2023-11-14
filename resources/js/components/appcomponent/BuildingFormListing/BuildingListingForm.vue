@@ -30,6 +30,10 @@
             </select>
         </div>
         <div class="form-group">
+            <label>Area :</label>
+            <input type="text" name="city" class="form-control"   v-model="old.area" placeholder="Area">
+        </div>
+        <div class="form-group">
             <label>City :</label>
             <input type="text" name="city" class="form-control"   v-model="old.city" placeholder="City">
         </div>
@@ -125,6 +129,7 @@ export default {
                 this.loader = true;
                 try {
                     // Send a POST request and wait for the response
+                    this.old.images = this.selectedImages;
                     let response = await axios.post(this.form_url, this.old);
 
                     if (response.status === 200) {
