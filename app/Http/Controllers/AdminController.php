@@ -3,20 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\{
-    Listing,
-    Realtor,
-    User,
-    Contact};
+use App\{Listing, Models\PropertyEntry, Realtor, User, Contact};
 
 class AdminController extends Controller
 {
     public function index()
     {
 
-        $listings = Listing::orderBy('id', 'DESC')->get();
-        $total_listing = $listings->where('is_published', '1')->count();
-        $total_new_listing = $listings->where('is_published', '0')->count();
+        $listings = PropertyEntry::orderBy('id', 'DESC')->get();
+        $total_listing = PropertyEntry::where('is_published', '1')->count();
+        $total_new_listing = PropertyEntry:: where('is_published', '0')->count();
         $users = User::all();
         $total_admins = $users->where('role', '0')->count();
         $total_users = $users->where('role', '2')->count();

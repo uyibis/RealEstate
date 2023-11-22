@@ -9,19 +9,20 @@ class FrontEndController extends Controller
 {
     public function index()
     {
-        $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
+         $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
+         // dd($latest_listings);
          return view('site.layouts.index', compact('latest_listings'));
     }
     public function template()
     {
-        $listings= ListingNew::all();
-       // $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
+        $listings = ListingNew::all();
+        //$latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
         return view('site.template.index', compact('listings'));
     }
 
     public function new_Index()
     {
-        //$listings= ListingNew::all();
+        //$listings = ListingNew::all();
         $latest_listings=PropertyEntry::orderBy('id','DESC')->where('property_type',PropertyType::LAND)->where('is_published','1')
             ->limit('3')->with('land_listing.images.user_upload')->with('land_listing.realtor')->get();
         $apartment_listings=PropertyEntry::orderBy('id','DESC')->where('property_type',PropertyType::APARTMENT)->where('is_published','1')
@@ -29,7 +30,7 @@ class FrontEndController extends Controller
         $building_listings=PropertyEntry::orderBy('id','DESC')->where('property_type',PropertyType::BUILDING)->where('is_published','1')
             ->limit('3')->with('building_listing.images.user_upload')->with('building_listing.realtor')->get();
         //die (json_encode($building_listings));
-        // $latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
+        //$latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
         return view('front.home.index', compact('latest_listings','apartment_listings','building_listings'));
     }
 
@@ -41,8 +42,22 @@ class FrontEndController extends Controller
 
     public function listing($id)
     {
-        $listing = Listing::with('realtor')->where('is_published','1')->findOrFail($id);
-        return view('site.layouts.listing', compact('listing'));
+       // $listing = Listing::with('realtor')->where('is_published','1')->findOrFail($id);
+        $listing = PropertyEntry::find($id);
+        $property_type=$listing->property_type;
+        switch ( $property_type){
+            case PropertyType::LAND:
+                $listing=PropertyEntry::where('id',$id)->with('land_listing.images.user_upload')->with('land_listing.realtor')->first();
+                return view('front.single_view.land.index',compact('listing'));
+            case PropertyType::BUILDING:
+                $listing=PropertyEntry::where('id',$id)->with('building_listing.images.user_upload')->with('building_listing.realtor')->first();
+                return view('front.single_view.building.index',compact('listing'));
+            case PropertyType::APARTMENT:
+                $listing=PropertyEntry::where('id',$id)->with('apartment_listing.images.user_upload')->with('apartment_listing.realtor')->first();
+                return view('front.single_view.apartment.index',compact('listing'));
+        }
+       // dd(json_encode($listing));
+       // return view('site.layouts.listing', compact('listing'));
     }
 
 

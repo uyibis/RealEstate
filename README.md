@@ -29,7 +29,7 @@ Welcome to the Real Estate Project! This project aims to provide a comprehensive
 
 ### Prerequisites
 
-- PHP 7.x
+- PHP 8.x
 - Laravel 10.x
 - MySQL or any other supported database
 

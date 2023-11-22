@@ -206,7 +206,8 @@
                             <div class="qodef-contact-form-7">
                                 <div class="wpcf7 no-js" id="wpcf7-f5-p2116-o1" lang="en-US" dir="ltr">
                                     <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-                                    <form action="https://newhome.qodeinteractive.com/#wpcf7-f5-p2116-o1" method="post" class="wpcf7-form init demo" aria-label="Contact form" novalidate="novalidate" data-status="init">
+                                    <form action="" method="post" class="wpcf7-form init demo" aria-label="Contact form" novalidate="novalidate" data-status="init">
+                                        @csrf
                                         <div style="display: none;">
                                             <input type="hidden" name="_wpcf7" value="5" />
                                             <input type="hidden" name="_wpcf7_version" value="5.7.7" />
@@ -670,6 +671,7 @@ Agent </span>
                                 <div class="wpcf7 no-js" id="wpcf7-f16-p2116-o2" lang="en-US" dir="ltr">
                                     <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
                                     <form action="https://newhome.qodeinteractive.com/#wpcf7-f16-p2116-o2" method="post" class="wpcf7-form init demo" aria-label="Contact form" novalidate="novalidate" data-status="init">
+                                        @csrf
                                         <div style="display: none;">
                                             <input type="hidden" name="_wpcf7" value="16" />
                                             <input type="hidden" name="_wpcf7_version" value="5.7.7" />
@@ -781,138 +783,4 @@ Agent </span>
             </div>
         </div>
     </section>
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-4a77191 qodef-elementor-content-grid elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="4a77191" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-no">
-            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-06d6980" data-id="06d6980" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-fa21656 elementor-widget elementor-widget-newhome_core_section_title" data-id="fa21656" data-element_type="widget" data-widget_type="newhome_core_section_title.default">
-                        <div class="elementor-widget-container">
-                            <div class="qodef-shortcode qodef-m  qodef-section-title qodef-alignment--left qodef-title-break--disabled  qodef--custom-title-font-weight" style="--title-font-weight: 500;--decorated-font-weight: 600">
-                                <h2 class="qodef-m-title">
-                                    Read our real<br/> estate <span class="qodef-m-decorated">recent</span> <span class="qodef-m-decorated">news</span> </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-30c4941 qodef-elementor-content-grid elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="30c4941" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a9cab4b" data-id="a9cab4b" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-c8338ca elementor-widget elementor-widget-newhome_core_blog_list" data-id="c8338ca" data-element_type="widget" data-widget_type="newhome_core_blog_list.default">
-                        <div class="elementor-widget-container">
-                            <div class="qodef-shortcode qodef-m  qodef-blog qodef--list qodef-item-layout--standard qodef-grid qodef-layout--columns  qodef-gutter--custom qodef-vertical-gutter--custom qodef-col-num--3 qodef-item-layout--standard qodef-pagination--off qodef-responsive--custom qodef-col-num--1440--3 qodef-col-num--1366--3 qodef-col-num--1024--1 qodef-col-num--768--1 qodef-col-num--680--1 qodef-col-num--480--1" style="--qode-gutter-custom: 20px;--qode-vertical-gutter-custom: 0px;--qode-gutter-custom-1440: 20px;--qode-vertical-gutter-custom-1440: 0px;--qode-gutter-custom-1024: 20px;--qode-vertical-gutter-custom-1024: 65px;--qode-gutter-custom-680: 20px;--qode-vertical-gutter-custom-680: 65px" data-options="{&quot;plugin&quot;:&quot;newhome_core&quot;,&quot;module&quot;:&quot;blog\/shortcodes&quot;,&quot;shortcode&quot;:&quot;blog-list&quot;,&quot;post_type&quot;:&quot;post&quot;,&quot;next_page&quot;:&quot;2&quot;,&quot;max_pages_num&quot;:4,&quot;behavior&quot;:&quot;columns&quot;,&quot;images_proportion&quot;:&quot;full&quot;,&quot;columns&quot;:&quot;3&quot;,&quot;columns_responsive&quot;:&quot;custom&quot;,&quot;columns_1440&quot;:&quot;3&quot;,&quot;columns_1366&quot;:&quot;3&quot;,&quot;columns_1024&quot;:&quot;1&quot;,&quot;columns_768&quot;:&quot;1&quot;,&quot;columns_680&quot;:&quot;1&quot;,&quot;columns_480&quot;:&quot;1&quot;,&quot;space&quot;:&quot;custom&quot;,&quot;space_custom&quot;:&quot;20px&quot;,&quot;space_custom_1440&quot;:&quot;20px&quot;,&quot;space_custom_1024&quot;:&quot;20px&quot;,&quot;space_custom_680&quot;:&quot;20px&quot;,&quot;vertical_space&quot;:&quot;custom&quot;,&quot;vertical_space_custom&quot;:&quot;0px&quot;,&quot;vertical_space_custom_1440&quot;:&quot;0px&quot;,&quot;vertical_space_custom_1024&quot;:&quot;65px&quot;,&quot;vertical_space_custom_680&quot;:&quot;65px&quot;,&quot;posts_per_page&quot;:&quot;3&quot;,&quot;orderby&quot;:&quot;date&quot;,&quot;order&quot;:&quot;ASC&quot;,&quot;additional_params&quot;:&quot;tax&quot;,&quot;tax&quot;:&quot;category&quot;,&quot;tax_slug&quot;:&quot;Property&quot;,&quot;layout&quot;:&quot;standard&quot;,&quot;title_tag&quot;:&quot;h3&quot;,&quot;excerpt_length&quot;:&quot;147&quot;,&quot;read_more_button_layout&quot;:&quot;textual&quot;,&quot;hide_read_more_button&quot;:&quot;no&quot;,&quot;pagination_type&quot;:&quot;no-pagination&quot;,&quot;object_class_name&quot;:&quot;NewHomeCore_Blog_List_Shortcode&quot;,&quot;taxonomy_filter&quot;:&quot;category&quot;,&quot;additional_query_args&quot;:{&quot;tax_query&quot;:[{&quot;taxonomy&quot;:&quot;category&quot;,&quot;field&quot;:&quot;slug&quot;,&quot;terms&quot;:&quot;Property&quot;}]},&quot;holder_styles&quot;:{&quot;custom&quot;:&quot;--qode-gutter-custom: 20px&quot;,&quot;vertical_custom&quot;:&quot;--qode-vertical-gutter-custom: 0px&quot;,&quot;custom_1440&quot;:&quot;--qode-gutter-custom-1440: 20px&quot;,&quot;vertical_custom_1440&quot;:&quot;--qode-vertical-gutter-custom-1440: 0px&quot;,&quot;custom_1024&quot;:&quot;--qode-gutter-custom-1024: 20px&quot;,&quot;vertical_custom_1024&quot;:&quot;--qode-vertical-gutter-custom-1024: 65px&quot;,&quot;custom_680&quot;:&quot;--qode-gutter-custom-680: 20px&quot;,&quot;vertical_custom_680&quot;:&quot;--qode-vertical-gutter-custom-680: 65px&quot;}}">
-                                <div class="qodef-grid-inner">
-                                    <article class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-521 post type-post status-publish format-standard has-post-thumbnail hentry category-property tag-best-buy tag-lifestyle">
-                                        <div class="qodef-e-inner">
-                                            <div class="qodef-e-media">
-                                                <div class="qodef-e-media-image">
-                                                    <a itemprop="url" href="how-to-find-a-good-real-estate-agent/index.html">
-                                                        <img loading="lazy" width="1100" height="755" src="wp-content/uploads/2023/03/blog-compact-img1.jpg" class="attachment-full size-full wp-post-image" alt="f" decoding="async" srcset="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img1.jpg 1100w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img1-300x206.jpg 300w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img1-1024x703.jpg 1024w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img1-768x527.jpg 768w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img1-600x412.jpg 600w" sizes="(max-width: 1100px) 100vw, 1100px" /> </a>
-                                                </div>
-                                                <a itemprop="dateCreated" href="2023/03/index.html" class="entry-date published updated qodef--blur-date">
-                                                    13. March 2023.</a><div class="qodef-info-separator-end"></div>
-                                            </div>
-                                            <div class="qodef-e-content">
-                                                <div class="qodef-e-top-holder">
-                                                    <div class="qodef-e-info">
-                                                        <a href="category/property/index.html" rel="tag">Property</a><div class="qodef-info-separator-end"></div><span class="qodef-e-info-author-label">By </span>
-                                                        <a itemprop="author" href="author/julie-coleman/index.html" class="qodef-e-info-author">
-                                                            Julie Coleman</a><div class="qodef-info-separator-end"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="qodef-e-text">
-                                                    <h3 itemprop="name" class="qodef-e-title entry-title">
-                                                        <a itemprop="url" class="qodef-e-title-link" href="how-to-find-a-good-real-estate-agent/index.html">
-                                                            How to Find a Good Real Estate Agent </a>
-                                                    </h3>
-                                                    <p itemprop="description" class="qodef-e-excerpt">Ea cibo choro eos, in duo iudico eirmod. Qui modus meliore ex, has in decore virtute repudiare. An summo persequeris contentiones nec, ex sit modus</p>
-                                                </div>
-                                                <div class="qodef-e-bottom-holder">
-                                                    <div class="qodef-e-left">
-                                                        <div class="qodef-e-read-more">
-                                                            <a class="qodef-shortcode qodef-m  qodef-button qodef-layout--textual qodef-size--normal qodef-html--link" href="how-to-find-a-good-real-estate-agent/index.html" target="_self"> <span class="qodef-m-text">Read More</span></a> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-535 post type-post status-publish format-standard has-post-thumbnail hentry category-property tag-best-buy tag-lifestyle">
-                                        <div class="qodef-e-inner">
-                                            <div class="qodef-e-media">
-                                                <div class="qodef-e-media-image">
-                                                    <a itemprop="url" href="15-ways-to-negotiate-your-lease-price/index.html">
-                                                        <img loading="lazy" width="1100" height="755" src="wp-content/uploads/2023/03/blog-compact-img2.jpg" class="attachment-full size-full wp-post-image" alt="f" decoding="async" srcset="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img2.jpg 1100w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img2-300x206.jpg 300w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img2-1024x703.jpg 1024w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img2-768x527.jpg 768w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img2-600x412.jpg 600w" sizes="(max-width: 1100px) 100vw, 1100px" /> </a>
-                                                </div>
-                                                <a itemprop="dateCreated" href="2023/03/index.html" class="entry-date published updated qodef--blur-date">
-                                                    13. March 2023.</a><div class="qodef-info-separator-end"></div>
-                                            </div>
-                                            <div class="qodef-e-content">
-                                                <div class="qodef-e-top-holder">
-                                                    <div class="qodef-e-info">
-                                                        <a href="category/property/index.html" rel="tag">Property</a><div class="qodef-info-separator-end"></div><span class="qodef-e-info-author-label">By </span>
-                                                        <a itemprop="author" href="author/julie-coleman/index.html" class="qodef-e-info-author">
-                                                            Julie Coleman</a><div class="qodef-info-separator-end"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="qodef-e-text">
-                                                    <h3 itemprop="name" class="qodef-e-title entry-title">
-                                                        <a itemprop="url" class="qodef-e-title-link" href="15-ways-to-negotiate-your-lease-price/index.html">
-                                                            15 Ways to Negotiate Your Lease Price </a>
-                                                    </h3>
-                                                    <p itemprop="description" class="qodef-e-excerpt">Ea cibo choro eos, in duo iudico eirmod. Qui modus meliore ex, has in decore virtute repudiare. An summo persequeris contentiones nec, ex sit modus</p>
-                                                </div>
-                                                <div class="qodef-e-bottom-holder">
-                                                    <div class="qodef-e-left">
-                                                        <div class="qodef-e-read-more">
-                                                            <a class="qodef-shortcode qodef-m  qodef-button qodef-layout--textual qodef-size--normal qodef-html--link" href="15-ways-to-negotiate-your-lease-price/index.html" target="_self"> <span class="qodef-m-text">Read More</span></a> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-541 post type-post status-publish format-standard has-post-thumbnail hentry category-property tag-best-buy tag-lifestyle">
-                                        <div class="qodef-e-inner">
-                                            <div class="qodef-e-media">
-                                                <div class="qodef-e-media-image">
-                                                    <a itemprop="url" href="houses-designed-by-interior-experts/index.html">
-                                                        <img loading="lazy" width="1100" height="755" src="wp-content/uploads/2023/03/blog-compact-img3.jpg" class="attachment-full size-full wp-post-image" alt="b" decoding="async" srcset="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img3.jpg 1100w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img3-300x206.jpg 300w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img3-1024x703.jpg 1024w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img3-768x527.jpg 768w, https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img3-600x412.jpg 600w" sizes="(max-width: 1100px) 100vw, 1100px" /> </a>
-                                                </div>
-                                                <a itemprop="dateCreated" href="2023/03/index.html" class="entry-date published updated qodef--blur-date">
-                                                    13. March 2023.</a><div class="qodef-info-separator-end"></div>
-                                            </div>
-                                            <div class="qodef-e-content">
-                                                <div class="qodef-e-top-holder">
-                                                    <div class="qodef-e-info">
-                                                        <a href="category/property/index.html" rel="tag">Property</a><div class="qodef-info-separator-end"></div><span class="qodef-e-info-author-label">By </span>
-                                                        <a itemprop="author" href="author/julie-coleman/index.html" class="qodef-e-info-author">
-                                                            Julie Coleman</a><div class="qodef-info-separator-end"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="qodef-e-text">
-                                                    <h3 itemprop="name" class="qodef-e-title entry-title">
-                                                        <a itemprop="url" class="qodef-e-title-link" href="houses-designed-by-interior-experts/index.html">
-                                                            Houses Designed by Interior Experts </a>
-                                                    </h3>
-                                                    <p itemprop="description" class="qodef-e-excerpt">Ea cibo choro eos, in duo iudico eirmod. Qui modus meliore ex, has in decore virtute repudiare. An summo persequeris contentiones nec, ex sit modus</p>
-                                                </div>
-                                                <div class="qodef-e-bottom-holder">
-                                                    <div class="qodef-e-left">
-                                                        <div class="qodef-e-read-more">
-                                                            <a class="qodef-shortcode qodef-m  qodef-button qodef-layout--textual qodef-size--normal qodef-html--link" href="houses-designed-by-interior-experts/index.html" target="_self"> <span class="qodef-m-text">Read More</span></a> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-@endsection
+  @endsection
