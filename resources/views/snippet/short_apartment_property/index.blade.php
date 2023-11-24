@@ -1,5 +1,5 @@
-@foreach($apartment_listings as $land)
-{{--    {{$land->apartment_listing}}--}}
+@foreach($apartment_listings as $key =>$land)
+
 <article class="qodef-e qodef-grid-item qodef-item--custom post-2460 property type-property status-publish has-post-thumbnail hentry property-type-sell property-category-villas property-location-brooklyn property-tag-swimming-pool" data-id="2460">
 
     <div class="qodef-e-inner">
@@ -7,7 +7,7 @@
             <div class="qodef-e-media-slider qodef-swiper-container" data-options="{&quot;slidesPerView&quot;:1,&quot;spaceBetween&quot;:5,&quot;loop&quot;:true,&quot;autoplay&quot;:false}">
                 <div class="swiper-wrapper">
                     @foreach($land->apartment_listing->images as $image)
-                    <a class="swiper-slide" itemprop="url" href="property/south-sun-house/index.html">
+                    <a class="swiper-slide" itemprop="url" href="{{asset("listing/".$apartment_listings[$key]->id)}}">
                         <img decoding="async" loading="lazy" src="{{$image->user_upload->file_path}}" alt="w" width="460" height="300" data-ratio="1.5333333333333" />
                     </a>
                     @endforeach
@@ -15,7 +15,7 @@
                 <div class="swiper-pagination"></div>
             </div>
             <div class="qodef-e-info-item qodef--type">
-                <a itemprop="url" class="qodef-e-info-item-link qodef--property-type" href="property-type/sell/index.html">
+                <a itemprop="url" class="qodef-e-info-item-link qodef--property-type" href="{{asset("listing/".$apartment_listings[$key]->id)}}">
                     <span class="qodef-e-info-item-text">Rent</span>
                 </a>
             </div>
@@ -55,7 +55,7 @@
             </div>
             <div class="qodef-e-author">
                 <div class="qodef-e-author-image">
-                    <a itemprop="url" href="author/steve-parker/index.html">
+                    <a itemprop="url" href="{{asset("listing/".$apartment_listings[$key]->id)}}">
                         <img decoding="async" loading="lazy" src="{{asset($land->apartment_listing->realtor->image)}}" alt="b" width="50" height="50" data-ratio="1" />
                     </a>
                 </div>

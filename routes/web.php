@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 
-Route::get('/',  [\App\Http\Controllers\FrontEndController::class,'index'] )->name('index');
+//Route::get('/',  [\App\Http\Controllers\FrontEndController::class,'index'] )->name('index');
 //Route::get('/pt',  [\App\Http\Controllers\FrontEndController::class,'template'] )->name('pt');
-//Route::get('/',  [\App\Http\Controllers\FrontEndController::class,'new_Index'] )->name('ft');
+Route::get('/',  [\App\Http\Controllers\FrontEndController::class,'new_Index'] )->name('ft');
 Route::get('/listings', [\App\Http\Controllers\FrontEndController::class,'listings'] )->name('listings');
 
 Route::get('/listing/{id}', [\App\Http\Controllers\FrontEndController::class, 'listing'])->name('single.listing');
@@ -31,17 +31,7 @@ Route::post('/contact',function (\Illuminate\Http\Request $request){
    return json_encode($request->all());
 })->name('contact');
 
-Route::post('contactcontact-form-7/v1/contact-forms/5/feedback',function (\Illuminate\Http\Request $request){
-    return '{
-    "contact_form_id": 5,
-    "status": "mail_sent",
-    "message": "Thank you for your message. It has been sent.",
-    "posted_data_hash": "6222067a6b04716d750f020e1dd603da",
-    "demo_mode": true,
-    "into": "#wpcf7-f5-p2116-o1",
-    "invalid_fields": []
-}';
-});
+Route::post('contactcontact-form-7/v1/contact-forms/5/feedback',[\App\Http\Controllers\ContactController::class,'inquery']);
 Route::post('contactcontact-form-7/v1/contact-forms/16/feedback',function (\Illuminate\Http\Request $request){
     return '{
     "contact_form_id": 5,
