@@ -32,17 +32,7 @@ Route::post('/contact',function (\Illuminate\Http\Request $request){
 })->name('contact');
 
 Route::post('contactcontact-form-7/v1/contact-forms/5/feedback',[\App\Http\Controllers\ContactController::class,'inquery']);
-Route::post('contactcontact-form-7/v1/contact-forms/16/feedback',function (\Illuminate\Http\Request $request){
-    return '{
-    "contact_form_id": 5,
-    "status": "mail_sent",
-    "message": "Thank you for your message. It has been sent.",
-    "posted_data_hash": "6222067a6b04716d750f020e1dd603da",
-    "demo_mode": true,
-    "into": "#wpcf7-f5-p2116-o1",
-    "invalid_fields": []
-}';
-});
+Route::post('contactcontact-form-7/v1/contact-forms/16/feedback',[\App\Http\Controllers\ContactController::class, 'news_letter']);
 
 Route::get('contactcontact-form-7/v1/contact-forms/5/refill',function (\Illuminate\Http\Request $request){
     return '[]';

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Contact;
 use App\Models\Inquery;
+use App\Models\NewsLetter;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -94,6 +95,43 @@ class ContactController extends Controller
             );
             return $notification;
         }
+    }
 
+    public function news_letter(Request $request)
+    {
+
+        $request->validate([
+            'your-email'=>'required',
+        ]);
+
+        $contact = new NewsLetter([
+            'email' => $request->get('your-email')
+        ]);
+
+        $isSuccess =$contact->save();
+        if ($isSuccess) {
+            $notification = array(
+                "contact_form_id"=> 5,
+    "status"=> "mail_sent",
+    "message"=> "Thank you for subscribing to our newsletter.",
+    "posted_data_hash"=> "6222067a6b04716d750f020e1dd603da",
+    "demo_mode"=> true,
+    "into"=> "#wpcf7-f5-p2116-o1",
+    "invalid_fields"=> []
+            );
+
+            return $notification;
+        } else {
+            $notification = array(
+                "contact_form_id"=> 5,
+                "status"=> "not_sent",
+                "message"=> "Sorry, something went wrong",
+                "posted_data_hash"=> "6222067a6b04716d750f020e1dd603da",
+                "demo_mode"=> true,
+                "into"=> "#wpcf7-f5-p2116-o1",
+                "invalid_fields"=> []
+            );
+            return $notification;
+        }
     }
 }
