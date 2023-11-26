@@ -112,14 +112,13 @@ class ContactController extends Controller
         if ($isSuccess) {
             $notification = array(
                 "contact_form_id"=> 5,
-    "status"=> "mail_sent",
-    "message"=> "Thank you for subscribing to our newsletter.",
-    "posted_data_hash"=> "6222067a6b04716d750f020e1dd603da",
-    "demo_mode"=> true,
-    "into"=> "#wpcf7-f5-p2116-o1",
-    "invalid_fields"=> []
+                "status"=> "mail_sent",
+                "message"=> "Thank you for subscribing to our newsletter.",
+                "posted_data_hash"=> "6222067a6b04716d750f020e1dd603da",
+                "demo_mode"=> true,
+                "into"=> "#wpcf7-f5-p2116-o1",
+                "invalid_fields"=> []
             );
-
             return $notification;
         } else {
             $notification = array(

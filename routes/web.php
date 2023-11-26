@@ -23,7 +23,8 @@ Route::get('/listing/{id}', [\App\Http\Controllers\FrontEndController::class, 'l
 Route::get('/dashboard', [\App\Http\Controllers\FrontEndController::class, 'dashboard'])->name('dashboard');
 Route::get('/about', [\App\Http\Controllers\FrontEndController::class, 'about'])->name('about');
 Route::get('/query', [\App\Http\Controllers\searchController::class, 'search'])->name('search');
-Route::get('/search', [\App\Http\Controllers\searchController::class, 'result'])->name('result');
+Route::get('/query', [\App\Http\Controllers\searchController::class, 'search'])->name('search');
+Route::get('/search', [\App\Http\Controllers\searchController::class, 'advance_search'])->name('result');
 Route::post('/contact', [\App\Http\Controllers\ContactController::class, 'store'])->name('send-message');
 
 

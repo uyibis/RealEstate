@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\{Enum\PropertyType, Listing, Models\ListingNew, Models\PropertyEntry, Realtor, Contact, Som};
+use App\{Enum\PropertyType, Helper\Common, Listing, Models\ListingNew, Models\PropertyEntry, Realtor, Contact, Som};
 
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class FrontEndController extends Controller
 {
@@ -22,6 +23,9 @@ class FrontEndController extends Controller
 
     public function new_Index()
     {
+        $uniqueAreas = Common::uniqueAreas();
+        $uniqueKeywords = Common::uniqueKeywords();
+       // dd(json_encode($uniqueAreas));
         //$listings = ListingNew::all();
         $latest_listings=PropertyEntry::orderBy('id','DESC')->where('property_type',PropertyType::LAND)->where('is_published','1')
             ->limit('3')->with('land_listing.images.user_upload')->with('land_listing.realtor')->get();
@@ -31,7 +35,7 @@ class FrontEndController extends Controller
             ->limit('3')->with('building_listing.images.user_upload')->with('building_listing.realtor')->get();
         //die (json_encode($building_listings));
         //$latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
-        return view('front.home.index', compact('latest_listings','apartment_listings','building_listings'));
+        return view('front.home.index', compact('latest_listings','apartment_listings','building_listings','uniqueAreas','uniqueKeywords'));
     }
 
     public function listings()
@@ -43,18 +47,25 @@ class FrontEndController extends Controller
     public function listing($id)
     {
        // $listing = Listing::with('realtor')->where('is_published','1')->findOrFail($id);
+        $uniqueAreas = DB::table('listing_apartments')
+            ->select('area')
+            ->union(DB::table('listing_buildings')->select('area'))
+            ->union(DB::table('listing_lands')->select('area'))
+            ->distinct()
+            ->pluck('area');
+        //dd(json_encode($uniqueAreas));
         $listing = PropertyEntry::find($id);
         $property_type=$listing->property_type;
         switch ( $property_type){
             case PropertyType::LAND:
                 $listing=PropertyEntry::where('id',$id)->with('land_listing.images.user_upload')->with('land_listing.realtor')->first();
-                return view('front.single_view.land.index',compact('listing'));
+                return view('front.single_view.land.index',compact('listing','uniqueAreas'));
             case PropertyType::BUILDING:
                 $listing=PropertyEntry::where('id',$id)->with('building_listing.images.user_upload')->with('building_listing.realtor')->first();
-                return view('front.single_view.building.index',compact('listing'));
+                return view('front.single_view.building.index',compact('listing','uniqueAreas'));
             case PropertyType::APARTMENT:
                 $listing=PropertyEntry::where('id',$id)->with('apartment_listing.images.user_upload')->with('apartment_listing.realtor')->first();
-                return view('front.single_view.apartment.index',compact('listing'));
+                return view('front.single_view.apartment.index',compact('listing','uniqueAreas'));
         }
        // dd(json_encode($listing));
        // return view('site.layouts.listing', compact('listing'));

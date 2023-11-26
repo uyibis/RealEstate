@@ -17,11 +17,11 @@
                                 @include('snippet.short_building_property.index')
                             </div>
                             <div class="qodef-m-list-spinner-wrapper qodef-property-spinner">
-<span class="qodef-m-spinner">
-<svg width="20" height="20" viewBox="0 0 50 50">
-<circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
-</svg>
-</span>
+                            <span class="qodef-m-spinner">
+                            <svg width="20" height="20" viewBox="0 0 50 50">
+                            <circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
+                            </svg>
+                            </span>
                             </div>
                         </div>
                     </div>
