@@ -9,27 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
     <title>NewHome &#8211; Real Estate Theme</title>
     <meta name="robots" content="max-image-preview:large" />
-{{--
-<script data-cfasync="false" data-pagespeed-no-defer>
-    --}}
-{{--        var gtm4wp_datalayer_name = "dataLayer";--}}
-{{--        var dataLayer = dataLayer || [];--}}
-{{--
-</script>
---}} {{--
-        <link rel="dns-prefetch" href="http://export.qodethemes.com/" />
-        --}} {{--
-        <link rel="dns-prefetch" href="http://accounts.google.com/" />
-        --}} {{--
-        <link rel="dns-prefetch" href="http://static.zdassets.com/" />
-        --}} {{--
-        <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
-        --}}
-<!--    <script type="text/javascript">
-        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/newhome.qodeinteractive.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
-        /*! This file is auto-generated */
-        !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
-    </script>-->
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -692,6 +671,8 @@
             background-color: #fbfbfb;
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
 </head>
 <body
     class="home page-template page-template-page-full-width page-template-page-full-width-php page page-id-2116 theme-newhome qi-blocks-1.2.1 qodef-gutenberg--no-touch qode-framework-1.2.2 woocommerce-no-js qodef-qi--no-touch qi-addons-for-elementor-1.6.2 qodef-back-to-top--enabled qodef--passepartout qodef-header--standard qodef-header-appearance--none qodef-mobile-header--standard qodef-drop-down-second--full-width qodef-drop-down-second--default newhome-core-1.0.4 newhome-membership-1.0 newhome-1.2.2 qodef-content-grid-1400 qodef-header-standard--center elementor-default elementor-kit-4 elementor-page elementor-page-2116"
@@ -1323,114 +1304,15 @@ window.RS_MODULES.type = 'compiled';
 <script type="text/javascript" src="{{asset('wp-content/plugins/newhome-membership/assets/js/newhome-membership.min9b30.js?ver=6.3.1')}}" id="newhome-membership-script-js"></script>
 <script type="text/javascript" src="{{asset('wp-content/plugins/qi-blocks/inc/slider/assets/plugins/5.4.5/swiper.min9b30.js?ver=6.3.1')}}" id="swiper-js"></script>
 <script type="text/javascript" src="{{asset('wp-content/plugins/qode-framework/inc/common/assets/plugins/select2/select2.full.min68b3.js?ver=1')}}" id="select2-js"></script>
-<!--    <script type="text/javascript" src="../static.zdassets.com/ekr/snippet75eb.js?key=af3078fd-a5ae-40da-bee0-e589b98c8603&amp;ver=6.3.1" id="ze-snippet"></script><script type="text/javascript">
-zE(function(){
-    $zopim(function(){
-        var isChatEnabled = sessionStorage.getItem("qodeChatEnabled"),
-            appearingTime = 15000;
 
-        if(isChatEnabled !== "no" && window.innerWidth > 1024) {
-            setTimeout(function(){
-                $zopim.livechat.window.show();
-
-                $zopim.livechat.window.onHide(function(){
-                    sessionStorage.setItem("qodeChatEnabled", "no");
-                });
-            }, appearingTime);
-        }
-    });
-});
-</script>-->
 <script type="text/javascript" src="{{asset('wp-content/plugins/newhome-core/assets/plugins/nouislider/nouislider.min9b30.js?ver=6.3.1')}}" id="nouislider-js"></script>
 <script type="text/javascript" src="{{asset('wp-content/plugins/qi-blocks/inc/masonry/assets/plugins/isotope.pkgd.min9b30.js?ver=6.3.1" id="isotope-js')}}"></script>
 <script type="text/javascript" src="{{asset('wp-content/plugins/qi-blocks/inc/masonry/assets/plugins/packery-mode.pkgd.min9b30.js?ver=6.3.1')}}" id="packery-js"></script>
 <script type="text/javascript" src="{{asset('wp-content/plugins/newhome-core/assets/plugins/magnific-popup/jquery.magnific-popup.min9b30.js?ver=6.3.1')}}" id="jquery-magnific-popup-js"></script>
-<script id="mediaelement-core-js-before" type="text/javascript">
-    var mejsL10n = {
-        language: "en",
-        strings: {
-            "mejs.download-file": "Download File",
-            "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/",
-            "mejs.fullscreen": "Fullscreen",
-            "mejs.play": "Play",
-            "mejs.pause": "Pause",
-            "mejs.time-slider": "Time Slider",
-            "mejs.time-help-text": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.",
-            "mejs.live-broadcast": "Live Broadcast",
-            "mejs.volume-help-text": "Use Up\/Down Arrow keys to increase or decrease volume.",
-            "mejs.unmute": "Unmute",
-            "mejs.mute": "Mute",
-            "mejs.volume-slider": "Volume Slider",
-            "mejs.video-player": "Video Player",
-            "mejs.audio-player": "Audio Player",
-            "mejs.captions-subtitles": "Captions\/Subtitles",
-            "mejs.captions-chapters": "Chapters",
-            "mejs.none": "None",
-            "mejs.afrikaans": "Afrikaans",
-            "mejs.albanian": "Albanian",
-            "mejs.arabic": "Arabic",
-            "mejs.belarusian": "Belarusian",
-            "mejs.bulgarian": "Bulgarian",
-            "mejs.catalan": "Catalan",
-            "mejs.chinese": "Chinese",
-            "mejs.chinese-simplified": "Chinese (Simplified)",
-            "mejs.chinese-traditional": "Chinese (Traditional)",
-            "mejs.croatian": "Croatian",
-            "mejs.czech": "Czech",
-            "mejs.danish": "Danish",
-            "mejs.dutch": "Dutch",
-            "mejs.english": "English",
-            "mejs.estonian": "Estonian",
-            "mejs.filipino": "Filipino",
-            "mejs.finnish": "Finnish",
-            "mejs.french": "French",
-            "mejs.galician": "Galician",
-            "mejs.german": "German",
-            "mejs.greek": "Greek",
-            "mejs.haitian-creole": "Haitian Creole",
-            "mejs.hebrew": "Hebrew",
-            "mejs.hindi": "Hindi",
-            "mejs.hungarian": "Hungarian",
-            "mejs.icelandic": "Icelandic",
-            "mejs.indonesian": "Indonesian",
-            "mejs.irish": "Irish",
-            "mejs.italian": "Italian",
-            "mejs.japanese": "Japanese",
-            "mejs.korean": "Korean",
-            "mejs.latvian": "Latvian",
-            "mejs.lithuanian": "Lithuanian",
-            "mejs.macedonian": "Macedonian",
-            "mejs.malay": "Malay",
-            "mejs.maltese": "Maltese",
-            "mejs.norwegian": "Norwegian",
-            "mejs.persian": "Persian",
-            "mejs.polish": "Polish",
-            "mejs.portuguese": "Portuguese",
-            "mejs.romanian": "Romanian",
-            "mejs.russian": "Russian",
-            "mejs.serbian": "Serbian",
-            "mejs.slovak": "Slovak",
-            "mejs.slovenian": "Slovenian",
-            "mejs.spanish": "Spanish",
-            "mejs.swahili": "Swahili",
-            "mejs.swedish": "Swedish",
-            "mejs.tagalog": "Tagalog",
-            "mejs.thai": "Thai",
-            "mejs.turkish": "Turkish",
-            "mejs.ukrainian": "Ukrainian",
-            "mejs.vietnamese": "Vietnamese",
-            "mejs.welsh": "Welsh",
-            "mejs.yiddish": "Yiddish",
-        },
-    };
-</script>
+
 <script type="text/javascript" src="{{asset('wp-includes/js/mediaelement/mediaelement-and-player.min1f61.js?ver=4.2.17')}}" id="mediaelement-core-js"></script>
 <script type="text/javascript" src="{{asset('wp-includes/js/mediaelement/mediaelement-migrate.min9b30.js?ver=6.3.1')}}" id="mediaelement-migrate-js"></script>
-<script type="text/javascript" id="mediaelement-js-extra">
-    /* <![CDATA[ */
-    var _wpmejsSettings = { pluginPath: "\/wp-includes\/js\/mediaelement\/", classPrefix: "mejs-", stretching: "responsive", audioShortcodeLibrary: "mediaelement", videoShortcodeLibrary: "mediaelement" };
-    /* ]]> */
-</script>
+
 <script type="text/javascript" src="{{asset('wp-includes/js/mediaelement/wp-mediaelement.min9b30.js?ver=6.3.1')}}" id="wp-mediaelement-js"></script>
 <script type="text/javascript" src="{{asset('wp-includes/js/mediaelement/renderers/vimeo.min1f61.js?ver=4.2.17')}}" id="mediaelement-vimeo-js"></script>
 <script type="text/javascript" src="{{asset('wp-content/plugins/elementor/assets/js/webpack.runtime.mina1c3.js?ver=3.14.1')}}" id="elementor-webpack-runtime-js"></script>
@@ -1624,6 +1506,8 @@ zE(function(){
         window.RS_MODULES.checkMinimal();
     }
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 <div
     id="newhome-core-page-inline-style"
     data-style="@media only screen and (max-width: 1440px){.qodef-custom-font-916 { font-size: 50px!important;line-height: 57px!important;}.qodef-custom-font-969 { font-size: 50px!important;line-height: 57px!important;}}@media only screen and (max-width: 1366px){.qodef-custom-font-916 { font-size: 50px!important;line-height: 57px!important;}.qodef-custom-font-969 { font-size: 50px!important;line-height: 57px!important;}}@media only screen and (max-width: 1024px){.qodef-custom-font-916 { font-size: 50px!important;line-height: 57px!important;}.qodef-custom-font-969 { font-size: 50px!important;line-height: 57px!important;}}@media only screen and (max-width: 768px){.qodef-custom-font-916 { font-size: 50px!important;line-height: 57px!important;}.qodef-custom-font-969 { font-size: 50px!important;line-height: 57px!important;}}@media only screen and (max-width: 680px){.qodef-custom-font-916 { font-size: 45px!important;line-height: 51px!important;}.qodef-custom-font-969 { font-size: 45px!important;line-height: 51px!important;}}"

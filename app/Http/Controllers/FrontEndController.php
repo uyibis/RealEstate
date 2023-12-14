@@ -1,7 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\{Enum\PropertyType, Helper\Common, Listing, Models\ListingNew, Models\PropertyEntry, Realtor, Contact, Som};
+use App\{Enum\PropertyType,
+    Helper\Common,
+    Listing,
+    Models\ListingNew,
+    Models\PropertyEntry,
+    Models\Testimonial,
+    Realtor,
+    Contact,
+    Som};
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -25,6 +33,7 @@ class FrontEndController extends Controller
     {
         $uniqueAreas = Common::uniqueAreas();
         $uniqueKeywords = Common::uniqueKeywords();
+        $testimonials =Testimonial::all();
        // dd(json_encode($uniqueAreas));
         //$listings = ListingNew::all();
         $latest_listings=PropertyEntry::orderBy('id','DESC')->where('property_type',PropertyType::LAND)->where('is_published','1')
@@ -35,7 +44,7 @@ class FrontEndController extends Controller
             ->limit('3')->with('building_listing.images.user_upload')->with('building_listing.realtor')->get();
         //die (json_encode($building_listings));
         //$latest_listings = Listing::orderBy('id', 'DESC')->where('is_published','1')->limit('3')->get();
-        return view('front.home.index', compact('latest_listings','apartment_listings','building_listings','uniqueAreas','uniqueKeywords'));
+        return view('front.home.index', compact('latest_listings','apartment_listings','building_listings','uniqueAreas','uniqueKeywords','testimonials'));
     }
 
     public function listings()

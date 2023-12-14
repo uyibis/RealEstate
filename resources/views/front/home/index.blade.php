@@ -32,11 +32,10 @@
                                             setREVStartSize({c: 'rev_slider_1_1',rl:[1920,1700,1025,680],el:[866,565,620,600],gw:[1400,1100,600,300],gh:[866,565,620,900],type:'standard',justify:'',layout:'fullwidth',mh:"0"});if (window.RS_MODULES!==undefined && window.RS_MODULES.modules!==undefined && window.RS_MODULES.modules["revslider11"]!==undefined) {window.RS_MODULES.modules["revslider11"].once = false;window.revapi1 = undefined;if (window.RS_MODULES.checkMinimal!==undefined) window.RS_MODULES.checkMinimal()}
                                         </script>
                                     </rs-module-wrap>
-
                                 </div>
                                 <div class="qodef-m-content-holder qodef-content-grid">
                                     <div class="qodef-m-section-title-holder">
-                                        <div class="qodef-shortcode qodef-m  qodef-section-title qodef-alignment--left   qodef--custom-title-font-weight" style="--title-font-weight: 500;--decorated-font-weight: 600"> <h2 class="qodef-m-title" style="color: #FFFFFF"> Buy or rent properties<br/> with <span class="qodef-m-decorated">no</span> <span class="qodef-m-decorated">commission</span> </h2> </div> </div>
+                                        <div class="qodef-shortcode qodef-m  qodef-section-title qodef-alignment--left   qodef--custom-title-font-weight" style="--title-font-weight: 500;--decorated-font-weight: 600"> <h2 class="qodef-m-title" style="color: #FFFFFF"> Buy or rent genuine properties<br/> from <span class="qodef-m-decorated">reliable</span> <span class="qodef-m-decorated">source</span> </h2> </div> </div>
                                     @include('front.single_view.home_search.index')
                                 </div>
                             </div>
@@ -46,6 +45,7 @@
             </div>
         </div>
     </section>
+
     @include('snippet.section.apartment.index')
     @include('snippet.section.building.index')
     @include('snippet.section.land.index')
@@ -71,15 +71,11 @@
                                 <h2 class="qodef-m-title">
                                     Modern spaces and<br/> <span class="qodef-m-decorated">premium</span> design </h2>
                                 <p class="qodef-m-text-area" style="margin-top: 22px">
-                                    Lorem ipsum dolor sit amet, minimum inimicus quo no, at vix primis viderere vituperatoribus. In corpora argumentum. </p>
+                                    Experience the epitome of elegance with Modern Spaces and Premium Design. Elevate your lifestyle in spaces that seamlessly blend contemporary aesthetics with sophisticated functionality. Welcome to a world where every detail reflects modern luxury and timeless style. </p>
                             </div>
                         </div>
                     </div>
-                    <div class="elementor-element elementor-element-a929cb0 elementor-widget elementor-widget-text-editor" data-id="a929cb0" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                            <style>/*! elementor - v3.14.0 - 26-06-2023 */
-                                .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style> <p>&#8211; Mea omnium explicari <br/>&#8211; His no legere feugaitoer <br/>&#8211; illum idquem</p> </div>
-                    </div>
+
                     <div class="elementor-element elementor-element-fb80b06 elementor-widget elementor-widget-newhome_core_button" data-id="fb80b06" data-element_type="widget" data-widget_type="newhome_core_button.default">
                         <div class="elementor-widget-container">
                             <a class="qodef-shortcode qodef-m  qodef-button qodef-layout--filled  qodef-html--link" href="author/new-home/index.html" target="_self">
@@ -114,9 +110,9 @@
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="48.2" height="47.463" viewBox="0 0 48.2 47.463"><g transform="translate(0.1 0.101)"><g transform="translate(6.132)"><g transform="translate(5.593 15.246)"><path d="M763.611,150.617H739.874a.445.445,0,0,1-.446-.446v-15.2a.446.446,0,1,1,.891,0v14.75h22.846V134.949a.446.446,0,1,1,.891,0v15.222A.445.445,0,0,1,763.611,150.617Z" transform="translate(-739.428 -134.503)" stroke="#000" stroke-width="0.2" /><g transform="translate(8.343 5.226)"><path d="M756.281,151.143a.446.446,0,0,1-.446-.446v-9.441h-6.157V150.7a.446.446,0,1,1-.891,0v-9.886a.446.446,0,0,1,.446-.446h7.048a.445.445,0,0,1,.446.446V150.7A.445.445,0,0,1,756.281,151.143Z" transform="translate(-748.787 -140.365)" stroke="#000" stroke-width="0.2" /></g></g><path d="M765.891,135.614a.448.448,0,0,1-.282-.1l-14.587-11.883-14.587,11.883a.445.445,0,0,1-.627-.064l-2.553-3.135a.444.444,0,0,1,.064-.627L750.735,117.5a.441.441,0,0,1,.332-.1l.034,0a.431.431,0,0,1,.209.093l17.417,14.187a.447.447,0,0,1,.064.627l-2.554,3.135A.447.447,0,0,1,765.891,135.614Zm-14.869-13a.443.443,0,0,1,.282.1l14.523,11.83,1.992-2.444-16.8-13.681-16.8,13.681,1.992,2.444,14.523-11.83A.442.442,0,0,1,751.022,122.611Z" transform="translate(-733.154 -117.401)" stroke="#000" stroke-width="0.2" /></g><g transform="translate(0 9.871)"><g transform="translate(35.92)"><path d="M778.2,157.413a.446.446,0,0,1-.446-.446V131.787a2.425,2.425,0,0,0-2.421-2.422h-8.321a.446.446,0,0,1,0-.891h8.321a3.317,3.317,0,0,1,3.313,3.314v25.181A.446.446,0,0,1,778.2,157.413Z" transform="translate(-766.569 -128.473)" stroke="#000" stroke-width="0.2" /></g><path d="M770.963,161.379H729.589a3.317,3.317,0,0,1-3.313-3.313v-26.28a3.317,3.317,0,0,1,3.313-3.314h8.563a.446.446,0,0,1,0,.891h-8.563a2.425,2.425,0,0,0-2.421,2.422v26.28a2.424,2.424,0,0,0,2.421,2.421h41.375a2.424,2.424,0,0,0,2.421-2.421.446.446,0,1,1,.891,0A3.316,3.316,0,0,1,770.963,161.379Z" transform="translate(-726.276 -128.473)" stroke="#000" stroke-width="0.2" /><g transform="translate(0 27.102)"><path d="M770.963,164.678H729.589a3.473,3.473,0,0,1-3.313-3.607V159.32a.446.446,0,0,1,.446-.446H773.83a.446.446,0,0,1,.446.446v1.752A3.473,3.473,0,0,1,770.963,164.678Zm-43.8-4.913v1.306a2.584,2.584,0,0,0,2.421,2.715h41.375a2.584,2.584,0,0,0,2.421-2.715v-1.306Z" transform="translate(-726.276 -158.874)" stroke="#000" stroke-width="0.2" /></g><g transform="translate(20.565 32.015)"><path d="M749.79,169.762a.445.445,0,0,1-.446-.446v-4.485a.446.446,0,1,1,.891,0v4.485A.446.446,0,0,1,749.79,169.762Z" transform="translate(-749.344 -164.385)" stroke="#000" stroke-width="0.2" /><g transform="translate(5.98)"><path d="M756.5,169.762a.445.445,0,0,1-.446-.446v-4.485a.446.446,0,0,1,.891,0v4.485A.446.446,0,0,1,756.5,169.762Z" transform="translate(-756.052 -164.385)" stroke="#000" stroke-width="0.2" /></g></g><g transform="translate(17.104 36.5)"><path d="M758.809,170.307h-12.9a.446.446,0,1,1,0-.891h12.9a.446.446,0,1,1,0,.891Z" transform="translate(-745.462 -169.416)" stroke="#000" stroke-width="0.2" /></g><g transform="translate(23.173 29.787)"><path d="M753.478,162.777h-.762a.446.446,0,1,1,0-.891h.762a.446.446,0,1,1,0,.891Z" transform="translate(-752.27 -161.886)" stroke="#000" stroke-width="0.2" /></g></g></g></svg> </div>
                                                 <div class="qodef-m-content">
                                                     <h4 class="qodef-m-title" style="margin-top: 3px">
-                                                        <span class="qodef-m-title-text">Find real estate</span>
+                                                        <span class="qodef-m-title-text">Find a property</span>
                                                     </h4>
-                                                    <p class="qodef-m-text">Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco quod suavitate vix.</p>
+                                                    <p class="qodef-m-text">Our platform revolutionizes the house-hunting experience, providing you with a seamless and intuitive search for the perfect property.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -132,9 +128,9 @@
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="59.013" height="41.588" viewBox="0 0 59.013 41.588"><g transform="translate(0.181 0.15)"><g transform="translate(4.306 5.52)"><g transform="translate(0 7.255)"><g transform="translate(0 14.136)"><path d="M455.521,657.389H417.714a.828.828,0,0,1-.8-.883V643.773h-5.022a.381.381,0,1,1,0-.761h5.4a.38.38,0,0,1,.381.381v13.112c0,.06.016.122.043.122h37.807c.03,0,.044-.071.044-.122V643.393a.38.38,0,0,1,.381-.381h5.4a.381.381,0,0,1,0,.761h-5.021v12.732A.828.828,0,0,1,455.521,657.389Z" transform="translate(-411.506 -643.012)" stroke="#000" stroke-width="0.3" /></g><g transform="translate(15.137)"><path d="M439.417,636.588h-7.652a.381.381,0,0,1-.381-.381v-4.884a.381.381,0,0,1,.134-.29l7.652-6.494a.381.381,0,0,1,.628.29v11.378A.381.381,0,0,1,439.417,636.588Zm-7.272-.761h6.891V625.652l-6.891,5.848Z" transform="translate(-431.384 -624.449)" stroke="#000" stroke-width="0.3" /><g transform="translate(11.534 0.001)"><path d="M454.563,636.588h-7.652a.381.381,0,0,1-.381-.381V624.83a.381.381,0,0,1,.627-.29l7.652,6.494a.379.379,0,0,1,.134.29v4.883A.381.381,0,0,1,454.563,636.588Zm-7.272-.762h6.891V631.5l-6.891-5.848Z" transform="translate(-446.53 -624.45)" stroke="#000" stroke-width="0.3" /></g></g><g transform="translate(31.163 18.369)"><path d="M459.13,658.591a.38.38,0,0,1-.381-.381v-8.879h-5.559v8.879a.381.381,0,1,1-.762,0v-9.26a.38.38,0,0,1,.381-.381h6.321a.38.38,0,0,1,.381.381v9.26A.38.38,0,0,1,459.13,658.591Z" transform="translate(-452.429 -648.57)" stroke="#000" stroke-width="0.3" /></g><g transform="translate(11.953 17.492)"><path d="M432.5,654.593h-4.92a.38.38,0,0,1-.381-.381V647.8a.38.38,0,0,1,.381-.381h4.92a.381.381,0,0,1,.381.381v6.413A.381.381,0,0,1,432.5,654.593Zm-4.539-.761h4.159v-5.651h-4.159Z" transform="translate(-427.202 -647.419)" stroke="#000" stroke-width="0.3" /><g transform="translate(9.684)"><path d="M445.219,654.593H440.3a.381.381,0,0,1-.381-.381V647.8a.381.381,0,0,1,.381-.381h4.919a.38.38,0,0,1,.381.381v6.413A.38.38,0,0,1,445.219,654.593Zm-4.539-.761h4.158v-5.651h-4.158Z" transform="translate(-439.919 -647.419)" stroke="#000" stroke-width="0.3" /></g></g></g><g transform="translate(35.88)"><path d="M465.25,624.373a.38.38,0,0,1-.381-.381v-7.11a1.1,1.1,0,0,0-.963-1.2h-3.556a1.1,1.1,0,0,0-.966,1.2v1.892a.381.381,0,1,1-.761,0v-1.892a1.857,1.857,0,0,1,1.728-1.96h3.556a1.856,1.856,0,0,1,1.725,1.96v7.11A.38.38,0,0,1,465.25,624.373Z" transform="translate(-458.623 -614.922)" stroke="#000" stroke-width="0.3" /></g></g><g transform="translate(0)"><path d="M460.866,636.009a.381.381,0,0,1-.241-.085l-25.448-20.73-25.448,20.73a.385.385,0,0,1-.279.083.377.377,0,0,1-.257-.139l-3.257-4a.381.381,0,0,1,.055-.535l28.943-23.576a.382.382,0,0,1,.283-.083l.024,0a.379.379,0,0,1,.179.079l28.942,23.576a.381.381,0,0,1,.055.535l-3.257,4a.377.377,0,0,1-.257.139Zm-54.1-4.324,2.775,3.408,25.393-20.685a.381.381,0,0,1,.481,0l25.393,20.685,2.775-3.408-28.409-23.142Z" transform="translate(-405.851 -607.674)" stroke="#000" stroke-width="0.3" /></g></g></svg> </div>
                                                 <div class="qodef-m-content">
                                                     <h4 class="qodef-m-title" style="margin-top: 9px">
-                                                        <span class="qodef-m-title-text">Meet relator</span>
+                                                        <span class="qodef-m-title-text">Meet a realtor</span>
                                                     </h4>
-                                                    <p class="qodef-m-text">Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco quod suavitate vix.</p>
+                                                    <p class="qodef-m-text">Embark on a personalized journey to your dream property with our realtor! 🏠 Our dedicated real estate professionals are here to guide you every step of the way</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -152,7 +148,7 @@
                                                     <h4 class="qodef-m-title" style="margin-top: 3px">
                                                         <span class="qodef-m-title-text">Documents</span>
                                                     </h4>
-                                                    <p class="qodef-m-text">Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco quod suavitate vix.</p>
+                                                    <p class="qodef-m-text">Meticulous documentation ensures a smooth and transparent journey, capturing every detail and commitment to transform your property aspirations into a tangible reality.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -170,7 +166,7 @@
                                                     <h4 class="qodef-m-title" style="margin-top: 3px">
                                                         <span class="qodef-m-title-text">Take the keys</span>
                                                     </h4>
-                                                    <p class="qodef-m-text">Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco quod suavitate vix.</p>
+                                                    <p class="qodef-m-text">Seal the deal and take the keys – it's the final step to unlocking the door to your new home. Congratulations on reaching this milestone in your real estate journey with 'Take the Keys.' Your dream space awaits, and now, it's officially yours!</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,7 +190,7 @@
                     </div>
                     <div class="elementor-element elementor-element-28ae5f5 elementor-widget elementor-widget-text-editor" data-id="28ae5f5" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <p><span style="color: #ffffff;">* Feugait scriptorem qui ea, quo admodum eloquentiam eu. Te malis tibique eum. Ne magna assum everti.</span></p> </div>
+                            <p><span style="color: #ffffff;"></span></p> </div>
                     </div>
                 </div>
             </div>
@@ -385,263 +381,62 @@
                             <div class="qodef-shortcode qodef-m  qodef-testimonials-grid-slider qodef-grid qodef-swiper-container    qodef-col-num--1 qodef-item-layout--info-below qodef-responsive--predefined qodef-swiper--show-pagination" data-options="{&quot;spaceBetween&quot;:0,&quot;slidesPerView&quot;:&quot;1&quot;,&quot;loop&quot;:true,&quot;autoplay&quot;:true,&quot;speed&quot;:&quot;&quot;,&quot;speedAnimation&quot;:&quot;&quot;,&quot;slideAnimation&quot;:&quot;&quot;,&quot;direction&quot;:&quot;&quot;,&quot;centeredSlides&quot;:&quot;&quot;,&quot;sliderScroll&quot;:&quot;&quot;,&quot;loopedSlides&quot;:&quot;&quot;,&quot;hiddenSlides&quot;:&quot;&quot;,&quot;outsideNavigation&quot;:&quot;yes&quot;,&quot;unique&quot;:118}">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials1-83x83.png" alt="d" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Toby Young </span>
-                                                        <span class="qodef-e-author-job">
-Manager </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
+                                        @for ($i = 0; $i < 4; $i++)
+                                            @if (isset($testimonials[$i]))
+                                                <div class="qodef-e qodef-item--custom">
+                                                    <div class="qodef-e-inner">
+                                                        <div class="qodef-e-media-image">
+                                                            <div style="background: sandybrown; border-radius: 50%; width: 83px; height: 83px; display: flex; justify-content: center; align-items: center;" alt="d" data-ratio="1">
+                                                                <h1 style="margin: 0;">{{ strtoupper(substr($testimonials[$i]['name'], 0, 2)) }}</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="qodef-e-content">
+                                                            <h4 class="qodef-e-author">
+                        <span class="qodef-e-author-name">
+                            {{ $testimonials[$i]['name'] }}
+                        </span>
+                                                                <span class="qodef-e-author-job">
+                            {{ $testimonials[$i]['job'] }}
+                        </span>
+                                                            </h4>
+                                                            <p itemprop="description" class="qodef-e-text">
+                                                                "{{ $testimonials[$i]['message'] }}"
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials2-83x83.png" alt width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Anne Reid </span>
-                                                        <span class="qodef-e-author-job">
-Sales Advisor </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials3-83x83.png" alt="s" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Mark Hagne </span>
-                                                        <span class="qodef-e-author-job">
-Agent </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials4-83x83.png" alt="d" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Mary Fox </span>
-                                                        <span class="qodef-e-author-job">
-Home Inspector </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><div class="swiper-slide"> <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials4-83x83.png" alt="d" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Aida Rutta </span>
-                                                        <span class="qodef-e-author-job">
-Home Inspector </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials3-83x83.png" alt="s" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Ron Bradley </span>
-                                                        <span class="qodef-e-author-job">
-Agent </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials2-83x83.png" alt width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Jeanis Green </span>
-                                                        <span class="qodef-e-author-job">
-Sales Advisor </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials1-83x83.png" alt="d" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Joel Pearson </span>
-                                                        <span class="qodef-e-author-job">
-Manager </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><div class="swiper-slide"> <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials3-83x83.png" alt="s" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Steve Curtis </span>
-                                                        <span class="qodef-e-author-job">
-Agent </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials1-83x83.png" alt="d" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Joey Trebio </span>
-                                                        <span class="qodef-e-author-job">
-Manager </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials4-83x83.png" alt="d" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Ella Smith </span>
-                                                        <span class="qodef-e-author-job">
-Home Inspector </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials2-83x83.png" alt width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Mari Adams </span>
-                                                        <span class="qodef-e-author-job">
-Sales Advisor </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><div class="swiper-slide"> <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials2-83x83.png" alt width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Ellie Holmes </span>
-                                                        <span class="qodef-e-author-job">
-Sales Advisor </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials4-83x83.png" alt="d" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Tiana Ray </span>
-                                                        <span class="qodef-e-author-job">
-Home Inspector </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials1-83x83.png" alt="d" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Kevin Wels </span>
-                                                        <span class="qodef-e-author-job">
-Manager </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-e  qodef-item--custom">
-                                            <div class="qodef-e-inner">
-                                                <div class="qodef-e-media-image">
-                                                    <img decoding="async" loading="lazy" src="wp-content/uploads/2023/03/about-us-testimonials3-83x83.png" alt="s" width="83" height="83" data-ratio="1" /> </div>
-                                                <div class="qodef-e-content">
-                                                    <h4 class="qodef-e-author">
-<span class="qodef-e-author-name">
-Chase Wales </span>
-                                                        <span class="qodef-e-author-job">
-Agent </span>
-                                                    </h4>
-                                                    <p itemprop="description" class="qodef-e-text">
-                                                        &quot;Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue.&quot; </p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                            @endif
+                                        @endfor
                                     </div>
+                                    <div class="swiper-slide">
+                                        @for ($i = 4; $i < 8; $i++)
+                                            @if (isset($testimonials[$i]))
+                                                <div class="qodef-e qodef-item--custom">
+                                                    <div class="qodef-e-inner">
+                                                        <div class="qodef-e-media-image">
+                                                            <div style="background: sandybrown; border-radius: 50%; width: 83px; height: 83px; display: flex; justify-content: center; align-items: center;" alt="d" data-ratio="1">
+                                                                <h1 style="margin: 0;">{{ strtoupper(substr($testimonials[$i]['name'], 0, 2)) }}</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="qodef-e-content">
+                                                            <h4 class="qodef-e-author">
+                        <span class="qodef-e-author-name">
+                            {{ $testimonials[$i]['name'] }}
+                        </span>
+                                                                <span class="qodef-e-author-job">
+                            {{$testimonials[$i]['job'] }}
+                        </span>
+                                                            </h4>
+                                                            <p itemprop="description" class="qodef-e-text">
+                                                                "{{ $testimonials[$i]['message'] }}"
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endif
+                                        @endfor
+                                    </div>
+
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -651,7 +446,7 @@ Agent </span>
             </div>
         </div>
     </section>
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-5257bb7 elementor-section-full_width qodef-elementor-content-grid elementor-section-height-default elementor-section-height-default" data-id="5257bb7" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+       <section class="elementor-section elementor-top-section elementor-element elementor-element-5257bb7 elementor-section-full_width qodef-elementor-content-grid elementor-section-height-default elementor-section-height-default" data-id="5257bb7" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
         <div class="elementor-container elementor-column-gap-no">
             <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3428f9e" data-id="3428f9e" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
